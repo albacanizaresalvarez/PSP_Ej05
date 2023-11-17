@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package practica_05;
+package Modelo;
 
 import java.util.GregorianCalendar;
 
@@ -13,15 +8,15 @@ import java.util.GregorianCalendar;
  */
 public class Alumno {
     
-    int codigoAlum;
+    int codAlum;
     int edadAlum;
     String nombreAlum;
     String fotoAlum;
     float notaMediaAlum;
     GregorianCalendar fechaNacimiento;
 
-    public Alumno(int codigoAlum, int edadAlum, String nombreAlum, String fotoAlum, float notaMediaAlum, int a, int m, int d) {
-        this.codigoAlum = codigoAlum;
+    public Alumno(int codAlum, int edadAlum, String nombreAlum, String fotoAlum, float notaMediaAlum, int a, int m, int d) {
+        this.codAlum = codAlum;
         this.edadAlum = edadAlum;
         this.nombreAlum = nombreAlum;
         this.fotoAlum = fotoAlum;
@@ -30,11 +25,11 @@ public class Alumno {
     }
 
     public int getCodigoAlum() {
-        return codigoAlum;
+        return codAlum;
     }
 
     public void setCodigoAlum(int codigoAlum) {
-        this.codigoAlum = codigoAlum;
+        this.codAlum = codigoAlum;
     }
 
     public int getEdadAlum() {
@@ -79,13 +74,7 @@ public class Alumno {
 
     @Override
     public String toString() {
-        return "Alumno{" + "codigoAlum=" + codigoAlum + ", edadAlum=" + edadAlum + ", nombreAlum=" + nombreAlum + ", fotoAlum=" + fotoAlum + ", notaMediaAlum=" + notaMediaAlum + ", fechaNacimiento=" + fechaNacimiento + '}';
+        return "Alumno{" + "codigoAlum=" + codAlum + ", edadAlum=" + edadAlum + ", nombreAlum=" + nombreAlum + ", fotoAlum=" + fotoAlum + ", notaMediaAlum=" + notaMediaAlum + ", fechaNacimiento=" + fechaNacimiento + '}';
     }
 
-   
-   
-
-    
-    
-    
 }
