@@ -1,40 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Modelo;
+
+package java05.pkg1;
 
 import java.util.GregorianCalendar;
 
-/**
- *
- * @author albit
- */
 public class Alumno {
     
-    int codigoAlum;
+    int codAlum;
     int edadAlum;
     String nombreAlum;
     String fotoAlum;
     float notaMediaAlum;
     GregorianCalendar fechaNacimiento;
+    int codTutor;
 
-    public Alumno(int codigoAlum, int edadAlum, String nombreAlum, String fotoAlum, float notaMediaAlum, int a, int m, int d) {
-        this.codigoAlum = codigoAlum;
+    public Alumno(int codAlum, int edadAlum, String nombreAlum, String fotoAlum, float notaMediaAlum, int a, int m, int d, int codTutor) {
+        this.codAlum = codAlum;
         this.edadAlum = edadAlum;
         this.nombreAlum = nombreAlum;
         this.fotoAlum = fotoAlum;
         this.notaMediaAlum = notaMediaAlum;
-        this.fechaNacimiento = new GregorianCalendar (a,m,d);
+        this.fechaNacimiento = new GregorianCalendar (a, m, d);
+        this.codTutor = codTutor;
     }
-
+    
     public int getCodigoAlum() {
-        return codigoAlum;
+        return codAlum;
     }
 
     public void setCodigoAlum(int codigoAlum) {
-        this.codigoAlum = codigoAlum;
+        this.codAlum = codigoAlum;
     }
 
     public int getEdadAlum() {
@@ -73,19 +67,15 @@ public class Alumno {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(GregorianCalendar fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
+    public void setFechaNacimiento(int a, int m, int d) {
+        this.fechaNacimiento = new GregorianCalendar (a,m,d);
     }
 
-    @Override
-    public String toString() {
-        return "Alumno{" + "codigoAlum=" + codigoAlum + ", edadAlum=" + edadAlum + ", nombreAlum=" + nombreAlum + ", fotoAlum=" + fotoAlum + ", notaMediaAlum=" + notaMediaAlum + ", fechaNacimiento=" + fechaNacimiento + '}';
+    public int getCodTutor() {
+        return codTutor;
     }
 
-   
-   
-
-    
-    
-    
+    public void setCodTutor(int codTutor) {
+        this.codTutor = codTutor;
+    }
 }
