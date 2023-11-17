@@ -28,7 +28,7 @@ INSERT INTO alumno VALUES (102,'Antonio', 24,'Prado','1002.jpg', 2.9, '11/01/201
 INSERT INTO alumno VALUES (103,'Gonzalo', 26,'Gonzalez','default.jpg',9, '01/05/2019', 1026);
 INSERT INTO alumno VALUES (104,'Sebastian', 18,'Sastre','1004.jpg', 4.5,'08/14/2019', 1028);
 INSERT INTO alumno VALUES (105,'Amalia', 21,'1005.jpg', 5.6, '06/20/2021', 1028);
-INSERT INTO alumno VALUES (106,'Manuel', 217,'default.jpg',8.4,'05/28/2021', 1028);
+INSERT INTO alumno VALUES (106,'Manuel', 27,'default.jpg',8.4,'05/28/2021', 1028);
 INSERT INTO alumno VALUES (107,'Sabrina', 28,'1007.jpg',8,'03/10/2019', 1026);
 INSERT INTO alumno VALUES (108,'Pascual', 26,'1008.jpg',7.2,'07/11/2020', 1026);
 INSERT INTO alumno VALUES (109,'Luna', 27,'1009.jpg',8.3,'06/12/2020',1028);
