@@ -43,11 +43,11 @@ WHERE sueldo > 2000;
 
 SELECT *
 FROM tutor
-WHERE apellido = 'Garcia';
+WHERE apellidos = 'Garcia';
 
 SELECT sum (sueldo)
 FROM tutor
-WHERE apellido = 'Canizares';
+WHERE apellidos = 'Canizares';
 ..-------------------------------------------------------------------------
 SELECT *
 FROM alumno;
