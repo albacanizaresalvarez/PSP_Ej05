@@ -98,9 +98,10 @@ public class ControladorDetalle {
                 int a = resultSet.getInt("a");
                 int m = resultSet.getInt("m");
                 int d = resultSet.getInt("d");
+                int codTutor = resultSet.getInt("codTutor");
 
                 // Construir y devolver un objeto Alumno
-                return new Alumno(codigoAlum, edadAlum, nombreAlum, fotoAlum, notaMediaAlum, a, m, d);
+                return new Alumno(codigoAlum, edadAlum, nombreAlum, fotoAlum, notaMediaAlum, a, m, d, codTutor);
             }
         } catch (SQLException e) {
             e.printStackTrace();
