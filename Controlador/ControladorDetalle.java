@@ -90,8 +90,8 @@ public class ControladorDetalle {
             if (resultSet != null) {
                 // Implementa la lógica para construir un objeto Alumno basado en el registro actual
                 // Puedes utilizar los métodos getXXX() en el ResultSet para obtener los valores de las columnas.
-                int codigoAlum = resultSet.getInt("codigoAlum");
-                int edadAlum = resultSet.getInt("edadAlum");
+                int codigoAlum = resultSet.getInt("codalum");
+                int edadAlum = resultSet.getInt("edadalum");
                 String nombreAlum = resultSet.getString("nombreAlum");
                 String fotoAlum = resultSet.getString("fotoAlum");
                 float notaMediaAlum = resultSet.getFloat("notaMediaAlum");
@@ -107,5 +107,3 @@ public class ControladorDetalle {
             e.printStackTrace();
         }
         return null;
-    }
-}
