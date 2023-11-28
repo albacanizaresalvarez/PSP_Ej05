@@ -25,9 +25,9 @@ INSERT INTO tutor VALUES (1029,'Tomas','Garcia','1029.jpg',2100,'07/15/2020', 't
 INSERT INTO tutor VALUES (1030,'Juan','Canizares','1030.jpg',2500,'10/15/2021', 'tutoralumno');
 
 INSERT INTO alumno VALUES (101,'Manuel', 23, '1001.jpg',9.5 , '10/17/2018', 1028);
-INSERT INTO alumno VALUES (102,'Antonio', 24,'Prado','1002.jpg', 2.9, '11/01/2019', 1028);
-INSERT INTO alumno VALUES (103,'Gonzalo', 26,'Gonzalez','default.jpg',9, '01/05/2019', 1026);
-INSERT INTO alumno VALUES (104,'Sebastian', 18,'Sastre','1004.jpg', 4.5,'08/14/2019', 1028);
+INSERT INTO alumno VALUES (102,'Antonio', 24,'1002.jpg', 2.9, '11/01/2019', 1028);
+INSERT INTO alumno VALUES (103,'Gonzalo', 26,'default.jpg',9, '01/05/2019', 1026);
+INSERT INTO alumno VALUES (104,'Sebastian', 18,'1004.jpg', 4.5,'08/14/2019', 1028);
 INSERT INTO alumno VALUES (105,'Amalia', 21,'1005.jpg', 5.6, '06/20/2021', 1028);
 INSERT INTO alumno VALUES (106,'Manuel', 27,'default.jpg',8.4,'05/28/2021', 1028);
 INSERT INTO alumno VALUES (107,'Sabrina', 28,'1007.jpg',8,'03/10/2019', 1026);
