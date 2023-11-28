@@ -4,7 +4,8 @@ CREATE TABLE tutor (
     apellidos    	VARCHAR(20),
     fototutor  	        VARCHAR(20),
     sueldo	    	NUMERIC(6,2), 
-    entradaCentro  		DATE 
+    entradaCentro  		DATE,
+    contrasena    VARCHAR(20)
 );
 
 CREATE TABLE alumno (
@@ -17,11 +18,11 @@ CREATE TABLE alumno (
     codTutor		INTEGER references Tutor
 );
 
-INSERT INTO tutor VALUES (1026,'Pablo','Rodriguez','default.jpg',2400,'10/15/2021');
-INSERT INTO tutor VALUES (1027,'Alba','Canizares','default.jpg',1200,'07/25/2019');
-INSERT INTO tutor VALUES (1028,'Irene','Moya','1028.jpg',1500,'06/29/2020');
-INSERT INTO tutor VALUES (1029,'Tomas','Garcia','1029.jpg',2100,'07/15/2020');
-INSERT INTO tutor VALUES (1030,'Juan','Canizares','1030.jpg',2500,'10/15/2021');
+INSERT INTO tutor VALUES (1026,'Pablo','Rodriguez','default.jpg',2400,'10/15/2021', 'tutoralumno');
+INSERT INTO tutor VALUES (1027,'Alba','Canizares','default.jpg',1200,'07/25/2019', 'tutoralumno');
+INSERT INTO tutor VALUES (1028,'Irene','Moya','1028.jpg',1500,'06/29/2020', 'tutoralumno');
+INSERT INTO tutor VALUES (1029,'Tomas','Garcia','1029.jpg',2100,'07/15/2020', 'tutoralumno');
+INSERT INTO tutor VALUES (1030,'Juan','Canizares','1030.jpg',2500,'10/15/2021', 'tutoralumno');
 
 INSERT INTO alumno VALUES (101,'Manuel', 23, '1001.jpg',9.5 , '10/17/2018', 1028);
 INSERT INTO alumno VALUES (102,'Antonio', 24,'Prado','1002.jpg', 2.9, '11/01/2019', 1028);
