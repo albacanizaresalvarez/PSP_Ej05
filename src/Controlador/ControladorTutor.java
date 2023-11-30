@@ -16,11 +16,11 @@ import java.sql.PreparedStatement;
 
 public class ControladorTutor {
 
-    private int codTutor;
-    private String nombre;
-    private String apellidos;      
-    private String fototutor;
-    private float sueldo;
+    private static int codTutor;
+    public static String nombre;
+    private static String apellidos;      
+    private static String fototutor;
+    private static float sueldo;
     //private Date fecha;
 
     public void modificarTutor(String nuevoNombre, String nuevaContasena, String nuevaImagen) {
@@ -90,10 +90,11 @@ public class ControladorTutor {
                 nombre=resultSet.getString("NOMBRE");
                 apellidos=resultSet.getString("APELLIDOS");
                 sueldo=resultSet.getInt("SUELDO");
+                codTutor = resultSet.getInt("CODTUTOR");
             }
             System.out.println("3");
 
-            codTutor = resultSet.getInt("CODTUTOR");
+            
 
         } catch (SQLException Ex) {
         } finally {
@@ -113,6 +114,10 @@ public class ControladorTutor {
 
     public float getSueldo() {
         return sueldo;
+    }
+
+    public int getCodtutor() {
+        return codTutor;
     }
 
    
