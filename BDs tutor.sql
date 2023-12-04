@@ -18,22 +18,22 @@ CREATE TABLE alumno (
     codTutor		INTEGER references Tutor
 );
 
-INSERT INTO tutor VALUES (1026,'Pablo','Rodriguez','default.jpg',2400,'10/15/2021', 'tutoralumno');
-INSERT INTO tutor VALUES (1027,'Alba','Canizares','default.jpg',1200,'07/25/2019', 'tutoralumno');
-INSERT INTO tutor VALUES (1028,'Irene','Moya','1028.jpg',1500,'06/29/2020', 'tutoralumno');
-INSERT INTO tutor VALUES (1029,'Tomas','Garcia','1029.jpg',2100,'07/15/2020', 'tutoralumno');
-INSERT INTO tutor VALUES (1030,'Juan','Canizares','1030.jpg',2500,'10/15/2021', 'tutoralumno');
+INSERT INTO tutor VALUES (1026,'Pablo','Rodriguez','tutor1.jpg',2400,'10/15/2021', 'tutoralumno');
+INSERT INTO tutor VALUES (1027,'Alba','Canizares','tutor2.jpg',1200,'07/25/2019', 'tutoralumno');
+INSERT INTO tutor VALUES (1028,'Irene','Moya','tutor3.jpg',1500,'06/29/2020', 'tutoralumno');
+INSERT INTO tutor VALUES (1029,'Tomas','Garcia','tutor1.jpg',2100,'07/15/2020', 'tutoralumno');
+INSERT INTO tutor VALUES (1030,'Juan','Canizares','tutor2.jpg',2500,'10/15/2021', 'tutoralumno');
 
-INSERT INTO alumno VALUES (101,'Manuel', 23, '1001.jpg',9.5 , '10/17/2018', 1028);
-INSERT INTO alumno VALUES (102,'Antonio', 24,'1002.jpg', 2.9, '11/01/2019', 1028);
-INSERT INTO alumno VALUES (103,'Gonzalo', 26,'default.jpg',9, '01/05/2019', 1026);
-INSERT INTO alumno VALUES (104,'Sebastian', 18,'1004.jpg', 4.5,'08/14/2019', 1028);
-INSERT INTO alumno VALUES (105,'Amalia', 21,'1005.jpg', 5.6, '06/20/2021', 1028);
-INSERT INTO alumno VALUES (106,'Manuel', 27,'default.jpg',8.4,'05/28/2021', 1028);
-INSERT INTO alumno VALUES (107,'Sabrina', 28,'1007.jpg',8,'03/10/2019', 1026);
-INSERT INTO alumno VALUES (108,'Pascual', 26,'1008.jpg',7.2,'07/11/2020', 1026);
-INSERT INTO alumno VALUES (109,'Luna', 27,'1009.jpg',8.3,'06/12/2020',1028);
-INSERT INTO alumno VALUES (110,'Maria', 20,'1010.jpg',3.5,'11/21/2021', 1028);
+INSERT INTO alumno VALUES (101,'Manuel', 23, 'alumno1.jpg',9.5 , '10/17/2018', 1028);
+INSERT INTO alumno VALUES (102,'Antonio', 24,'alumno2.jpg', 2.9, '11/01/2019', 1028);
+INSERT INTO alumno VALUES (103,'Gonzalo', 26,'alumno3.jpg',9, '01/05/2019', 1026);
+INSERT INTO alumno VALUES (104,'Sebastian', 18,'alumno4.jpg', 4.5,'08/14/2019', 1028);
+INSERT INTO alumno VALUES (105,'Amalia', 21,'alumno5.jpg', 5.6, '06/20/2021', 1028);
+INSERT INTO alumno VALUES (106,'Manuel', 27,'alumno1.jpg',8.4,'05/28/2021', 1028);
+INSERT INTO alumno VALUES (107,'Sabrina', 28,'alumno2.jpg',8,'03/10/2019', 1026);
+INSERT INTO alumno VALUES (108,'Pascual', 26,'alumno3.jpg',7.2,'07/11/2020', 1026);
+INSERT INTO alumno VALUES (109,'Luna', 27,'alumno4.jpg',8.3,'06/12/2020',1028);
+INSERT INTO alumno VALUES (110,'Maria', 20,'alumno5.jpg',3.5,'11/21/2021', 1028);
 
 SELECT *
 FROM tutor;
