@@ -34,6 +34,8 @@ INSERT INTO alumno VALUES (107,'Sabrina', 28,'alumno3.jpg',8,'03/10/2019', 1026)
 INSERT INTO alumno VALUES (108,'Pascual', 26,'alumno2.jpg',7.2,'07/11/2020', 1026);
 INSERT INTO alumno VALUES (109,'Luna', 27,'alumno3.jpg',8.3,'06/12/2020',1028);
 INSERT INTO alumno VALUES (110,'Mario', 20,'alumno5.jpg',3.5,'11/21/2021', 1028);
+INSERT INTO alumno VALUES (109,'Luna', 27,'alumno3.jpg',8.3,'06/12/2020',1030);
+INSERT INTO alumno VALUES (110,'Mario', 20,'alumno5.jpg',3.5,'11/21/2021', 1029);
 
 SELECT *
 FROM tutor;
