@@ -26,7 +26,8 @@ public class ControladorDetalle {
     private static float notaAlum;
     private static int codTutor;
     
-    
+    //nos conectamos a la base de datos y configuramos el statement para
+    //obtener un resultset que nos permita navegar hacia alante y hacia atras.
     public ControladorDetalle() {
         try {
             conexion = ControladorBD.getConnection();
@@ -36,12 +37,14 @@ public class ControladorDetalle {
             e.printStackTrace();
         }
     }
-
+    
+    //obtenemos los datos en el resultset
     public ResultSet inicializarResultSet(String consulta) throws SQLException{
         resultSet = statementDetalle.executeQuery(consulta);
         return resultSet;
     }
 
+    //pasamos los datos del resultset creando objetos de la clase Alumno
     public Alumno cargarDatosAlumno() throws SQLException {
         int codAlum = resultSet.getInt(1);
         String nombreAlum = resultSet.getString(2);
@@ -55,7 +58,8 @@ public class ControladorDetalle {
         Alumno a = new Alumno(codAlum, nombreAlum, edadAlum, fotoAlum, notaMediaAlum, fechaNacimiento);
         return a;
     }
-    
+
+    //metodos para navegar entre los registros obtenidos
      public void avanzar() throws SQLException {
         resultSet.next();
     }
