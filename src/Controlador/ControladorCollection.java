@@ -31,8 +31,8 @@ public class ControladorCollection {
             vuelta++;
 
             Connection conexion = null;
-            PreparedStatement st;
-            ResultSet rs = null;
+            PreparedStatement st; //lo usamos para ejecutar la consulta con parámetro (cod tutor)
+            ResultSet rs = null; // aqui recogeremos todos los datos que la consulta nos proporcione
             try {
                 conexion = (Connection) ControladorBD.getConnection();
                 
@@ -42,6 +42,7 @@ public class ControladorCollection {
                 st = conexion.prepareStatement(sql);
                 rs = st.executeQuery();
 
+                //mientras siga habiendo resultados por leer, sigo almacenando en el array
                 while (rs.next()) {
                     int CodAlum = rs.getInt("CODALUM");
                     String nombre = rs.getString("NOMBREALUM");
