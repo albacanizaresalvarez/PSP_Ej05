@@ -18,6 +18,7 @@ public final class JPanelDetalle extends javax.swing.JPanel {
 
     public JPanelDetalle(Tutor t) throws SQLException {
         initComponents();
+        //llenamos el array de los alumnos obtenidos a traves del controlador
         Alumnos = CA.obteneralumnos();
         btnAnterior.setEnabled(false);
         mostrarDatosAlum(indice);
@@ -32,7 +33,7 @@ public final class JPanelDetalle extends javax.swing.JPanel {
     }
 
     public void mostrarDatosAlum(int indice) {
-
+        //extraemos la informacion del array y la plasmamos en los campos correspondientes
         txtCodigo.setText("" + Alumnos.get(indice).getCodalum());
         txtNombre.setText(Alumnos.get(indice).getNombrealum());
         txtEdad.setText("" + Alumnos.get(indice).getEdadalum());
