@@ -19,7 +19,7 @@ public class ControladorTutor {
     private static float sueldo;
     private static Date fecha;
     
-
+    //intentamos iniciar sesion en la base de datos con los datos del tutor, usuario y contraseña
     public boolean entrar(String Usuario, String Contrasena) {
         Connection conexion = null;
         PreparedStatement pstatement;
