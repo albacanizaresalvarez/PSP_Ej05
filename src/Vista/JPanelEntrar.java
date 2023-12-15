@@ -101,8 +101,10 @@ public class JPanelEntrar extends javax.swing.JPanel {
 
     private void jButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarActionPerformed
 
+        //será true si hemos conseguido conectarnos con el usuario y contraseña
         boolean correcto = controladorT.entrar(txtUsuario.getText(), txtContrasena.getText());
 
+        //en ese caso se nos mostrará el menu principal en la barra de navegación
         if (correcto) {
             ((JFramePrincipal) SwingUtilities.getWindowAncestor(this)).mostrarMenu(true);
             JOptionPane.showMessageDialog(this, "Acceso permitido!");
